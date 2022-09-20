@@ -2,7 +2,7 @@ const quizStart = document.querySelector("#start-quiz");
 const intro = document.querySelector("#intro");
 const time = document.querySelector("#time");
 const questions = document.querySelector("#questions");
-const questionsArray = [{title:"Question 1?", choices: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"], rightAnswer: 1 }, {title:"Question 2", choices: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"], rightAnswer: 1 }, {title:"Question 1?", choices: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"], rightAnswer: 1 }, {title:"Question 1?", choices: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"], rightAnswer: 1 }];
+const questionsArray = [{title:"Question 1?", choices: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"], rightAnswer: 1 }, {title:"Question 2", choices: ["Answer A", "Answer B", "Answer C", "Answer D"], rightAnswer: 1 }, {title:"Question 1?", choices: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"], rightAnswer: 1 }, {title:"Question 1?", choices: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"], rightAnswer: 1 }];
 const currentQuestion = document.querySelector("#currentQuestion");
 const nextQuestion = document.querySelector("#next");
 const question = document.querySelector("#question");
@@ -12,7 +12,7 @@ const question = document.querySelector("#question");
 // const questionFour = document.querySelector("#question-4");
 
 let currentIndex = 0;
-const currentQuestionObj = questionsArray[currentIndex];
+
 
 quizStart.addEventListener("click", function(){
     intro.style.display = "none";
@@ -21,14 +21,15 @@ quizStart.addEventListener("click", function(){
 });
 
 nextQuestion.addEventListener("click", function(){
-    question.remove();
+    //question.remove();
     currentIndex = currentIndex + 1;
     appendNewQuestion();
 });
 
 function appendNewQuestion(){
+    const currentQuestionObj = questionsArray[currentIndex];
+    question.innerHTML = ""
     currentQuestion.innerHTML = currentQuestionObj.title;
-    //append for answers
     currentQuestionObj.choices.forEach(elem => {
         const list = document.createElement("Li");
         const node = document.createTextNode(elem);
