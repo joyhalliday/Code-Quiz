@@ -6,20 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Code Quiz</title>
     <link rel="stylesheet" href="assests/style.css"> 
-    <script defer src="assests/script.js"></script>
+    
 </head>
 <body>
-    <main class="card">
-    <h1>Coding Quiz</h1>
-        <p>Here is a quiz.</p>
-        <button id="start-quiz" >Start</button>
-    <h2 class="time">Countdown</h2>    
+    <main class="card" id="intro">
+        <h1>Coding Quiz</h1>
+            <p>Here is a quiz.</p>
+            <button id="start-quiz" >Start</button>
+        <h2 class="time">Countdown</h2>    
     </main>
-    <section>
-        <p id="question-1"></p>
-        <p id="question-2"></p>
-        <p id="question-3"></p>
-        <p id="question-4"></p>
+    <section id="questions" style="display: none">
+        <ol id="question">
+            <h1 id="currentQuestion"></h4>
+        </ol>
+        <button id="next">Next</button>
     </section>
+
+    <script src="assests/script.js"></script>
 </body>
 </html>
