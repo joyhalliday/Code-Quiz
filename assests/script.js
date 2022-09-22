@@ -34,7 +34,7 @@ const answer = document.querySelector("#answer");
 const highScore = document.querySelector("#score");
 const submitScore = document.querySelector("#submit");
 
-let secondsLeft = 45;
+let secondsLeft = 25;
 
 
 function startTimer() {

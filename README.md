@@ -1,4 +1,4 @@
-The fuction of this application is a quiz.
+The fuction of this application is as a quiz.
 
 On the main page, it prompts the user to start.
 
