@@ -3,6 +3,48 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #eff5f8;
+  color: #001b44;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  background-color: white;
+}
+
+li {
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color:  #001b44;
+  color: white;
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+
+
+li button {
+  float: right;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+  background-color: #ff7034;
+  color: white;
+  font-size: 1em;
+}
+
+li button:hover {
+    color: darkmagenta;
+}
 main {
     background-color: aqua;
     color: black;
@@ -11,13 +53,3 @@ main {
     align-items: center;
 }
 
-.button {
-  background-color: #4CAF50; 
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
