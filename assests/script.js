@@ -67,6 +67,10 @@ function appendNewQuestion() {
 function quizEnd() {
     time.style.display = "none";
     intro.style.display = "none";
-    questions.style.display = "block";
+    questions.style.display = "none";
     score.style.display = "block";
 };
+
+
+//add click event listener so page doesn't refresh
+//add JSON so it logs the score
