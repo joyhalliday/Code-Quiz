@@ -32,7 +32,7 @@ li {
 }
 
 
-li button {
+ul#answer button {
   float: right;
   border: none;
   height: 40px;

@@ -14,19 +14,19 @@ const questionsArray = [
 
         choices: ["Answer A", "Answer B", "Answer C", "Answer D"], 
 
-        rightAnswer: 1 }, 
+        rightAnswer: 3 }, 
 
     {title:"Question 3?", 
 
         choices: ["Answer 5", "Answer 6", "Answer 7", "Answer 8"], 
 
-        rightAnswer: 1 }, 
+        rightAnswer: 2 }, 
 
     {title:"Question 4?", 
     
         choices: ["Answer E", "Answer F", "Answer G", "Answer H"], 
 
-        rightAnswer: 1 }];
+        rightAnswer: 4 }];
     
 const currentQuestion = document.querySelector("#currentQuestion");
 const nextQuestion = document.querySelector("#next");
@@ -80,11 +80,12 @@ function appendNewQuestion() {
     currentQuestion.innerHTML = currentQuestionObj.title;
     currentQuestionObj.choices.forEach(elem => {
         const list = document.createElement("Li");
-        list.classList.add("button");
         const node = document.createTextNode(elem);
         list.appendChild(node);
         answer.appendChild(list);
     });
+
+   
  
     if (currentQuestionObj.title === ("Question 4?")) {
         quizEnd();
@@ -92,6 +93,8 @@ function appendNewQuestion() {
     }    
 
 }
+
+
 
 function quizEnd() {
     time.style.display = "none";
