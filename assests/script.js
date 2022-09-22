@@ -4,27 +4,27 @@ let time = document.querySelector(".time");
 const questions = document.querySelector("#questions");
 const questionsArray = [
 
-    {title:"Question 1?", 
+    {title:"What is the only mammal that can fly?", 
 
-        choices: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"], 
+        choices: ["A Bat", "A Tiger", "A Flying Squirel", "An Eagle"], 
 
         rightAnswer: 1 }, 
 
-    {title:"Question 2", 
+    {title:"How many bones does a giraffe have in its neck?", 
 
-        choices: ["Answer A", "Answer B", "Answer C", "Answer D"], 
+        choices: ["45", "12", "7", "9"], 
 
         rightAnswer: 3 }, 
 
-    {title:"Question 3?", 
+    {title:"What percentage of DNA do humans share with chimpanzees?", 
 
-        choices: ["Answer 5", "Answer 6", "Answer 7", "Answer 8"], 
+        choices: ["52.7%", "98.8%", "0%", "95.5%"], 
 
         rightAnswer: 2 }, 
 
-    {title:"Question 4?", 
+    {title:"How many dogs are in the world?", 
     
-        choices: ["Answer E", "Answer F", "Answer G", "Answer H"], 
+        choices: ["900 million", "4", "675 million", "470 million"], 
 
         rightAnswer: 4 }];
     
@@ -87,7 +87,7 @@ function appendNewQuestion() {
 
    
  
-    if (currentQuestionObj.title === ("Question 4?")) {
+    if (currentQuestionObj.title === ("How many dogs are in the world?")) {
         quizEnd();
         console.log(secondsLeft);
     }    
